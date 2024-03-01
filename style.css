@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:sans-serif;
+}
+.main{
+    color:white;
+    padding: 20px;
+    display: flex; 
+    justify-content: space-between;
+
+}
+.nav-links,a{
+    color:bisque;
+    display: flex; 
+    text-decoration: none;
+    margin-right: 5px;
+    margin-left: 40px;
+} 
+.btn{
+    padding: 10px;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: linear-gradient(to right,pink,orange);
+    font-weight: bold;
+    border-color:skyblue;
+    height: 20px;
+    
+}
+.btn:hover{
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 1px;
+    border-top-right-radius: 1px;
+    cursor: pointer;
+
+}
+.btn-1{
+    padding: 10px;
+    color: black;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color:skyblue;
+    font-weight: bold;
+    border-color:skyblue;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px blueviolet,0px 0px 25px blueviolet, 0px 0px 50px blueviolet;
+}
+
+.inner{
+    display: flex; 
+    justify-content: space-between;
+}
+.inner-left{
+    width:50%;
+    margin-left: 30px;
+    padding: 80px;
+    margin-top: 40px;
+}
+.inner h1{
+    animation-delay: 1s;
+}
+.inner p{
+    animation-delay: 1.5s;
+}
+.inner .btn-1{
+    animation-delay: 2s;
+}
+.feature-img.anim{
+    animation-delay: 2.5s;
+    margin-top: 25px;
+    box-shadow: 0px 0px 5px aqua,0px 0px 25px aqua, 0px 0px 50px aqua;
+}
+.btn a{
+    animation-delay: 1.5s;
+}
+.inner-right{
+    width:50%;
+}
+.inner-right img{
+    border-radius: 50%;
+    height: 400px;
+    width: 350px;
+    margin-top: 60px;
+    border-color: aqua;
+    border-style: solid;
+}
+h1,p{
+    color:white;
+   padding-bottom: 20px;
+   font-weight: bold;
+}
+.nav-links a{
+    animation-delay: 0.5s;
+}
+.anim{
+    opacity: 0;
+    transform:translateY(30px);
+    animation:moveup 0.5s linear forwards;
+}
+
+
+@keyframes moveup{
+    100%{
+        opacity: 1;
+        transform:translateY(0px);
+    }
+}
